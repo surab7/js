@@ -29,7 +29,7 @@ class Instagram {
 
     listPosts() {
         this.posts.forEach((post, index) => {
-            console.log(`Post ${index + 1}:`);
+            console.log(Post ${index + 1}:);
             console.table(post);
         });
     }
@@ -37,7 +37,7 @@ class Instagram {
     likePost(postIndex) {
         if (postIndex >= 0 && postIndex < this.posts.length) {
             this.posts[postIndex].likes++;
-            console.log(`Post ${postIndex + 1} has been liked.`);
+            console.log(Post ${postIndex + 1} has been liked.);
         } else {
             console.error("Invalid post index.");
         }
@@ -46,7 +46,7 @@ class Instagram {
     commentOnPost(postIndex, comment) {
         if (postIndex >= 0 && postIndex < this.posts.length && typeof comment === 'string') {
             this.posts[postIndex].comments.push(comment);
-            console.log(`Comment added to Post ${postIndex + 1}.`);
+            console.log(Comment added to Post ${postIndex + 1}.);
         } else {
             console.error("Invalid post index or comment.");
         }
@@ -55,7 +55,7 @@ class Instagram {
     deletePost(postIndex) {
         if (postIndex >= 0 && postIndex < this.posts.length) {
             this.posts.splice(postIndex, 1);
-            console.log(`Post ${postIndex + 1} has been deleted.`);
+            console.log(Post ${postIndex + 1} has been deleted.);
         } else {
             console.error("Invalid post index.");
         }
@@ -86,3 +86,4 @@ instagram.getTotalPosts();
 instagram.likePost(0); // Likes the first post
 instagram.commentOnPost(1, "This is so cool!"); // Comments on the second post
 instagram.deletePost(2); // Deletes the third post
+Explain the whole code in brief
